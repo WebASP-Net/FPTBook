@@ -18374,6 +18374,11 @@
   "RootNamespace": "FPTBOOK",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Admin\\OneDrive\\Máy tính\\FPTBook\\Views\\Category\\Edit.cshtml",
+      "TargetPath": "Views\\Category\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Admin\\OneDrive\\Máy tính\\FPTBook\\Views\\Shared\\_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
