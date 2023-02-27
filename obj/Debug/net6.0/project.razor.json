@@ -18524,6 +18524,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Admin\\OneDrive\\Máy tính\\FPTBook\\Views\\Category\\Create.cshtml",
+      "TargetPath": "Views\\Category\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Admin\\OneDrive\\Máy tính\\FPTBook\\Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\ExternalLogins.cshtml",
       "FileKind": "mvc"
