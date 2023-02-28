@@ -7,6 +7,7 @@ using FPTBook.Models;
 using FPTBook.Services;
 using FPTBOOK.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.Extensions.Logging;
 
 namespace FPTBook.Controllers
@@ -42,10 +43,11 @@ namespace FPTBook.Controllers
 
         public IActionResult Create()
         {
+            ViewData["Cat_Id"] = new SelectList(_context.Categories, "Cat_Id", "Cat_Name");
             return View();
         }
         [HttpPost]
-        public IActionResult Create(Product obj)
+        public IActionResult Create([Bind("Cat_Id,Cat_Name,Cat_Id")]Product obj)
         {
             if (ModelState.IsValid)
             {
@@ -62,6 +64,7 @@ namespace FPTBook.Controllers
             }
             else
             {
+                ViewData["Cat_Id"] = new SelectList(_context.Categories, "Cat_Id", "Cat_Id", obj.Cat_Id);
                 return View(obj);
             }
         }

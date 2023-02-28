@@ -14,12 +14,14 @@
 	<span class="text-danger" asp-validation-for="Price"></span>
 	<br />
 	CategoyID:
-	<input type="text" asp-for="Cat_Id" />
-	<span class="text-danger" asp-validation-for="Cat_Id"></span>
+    <label asp-for="Cat_Id" class="control-label"></label>
+    <select asp-for="Cat_Id" class="form-control" asp-items="ViewBag.Cat_Id"></select>
 	<br />
 	Image:
 	<input type="file" asp-for="FileImage"/>
-	<input type="submit" value="Submit">
+    <br>
+    <br>
+	<input type="submit" value="Upload">
 </form>
 @section scripts {
 	<partial name="_ValidationScriptsPartial" />
