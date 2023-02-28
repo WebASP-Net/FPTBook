@@ -18509,6 +18509,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\PC\\Desktop\\FPTBook\\Views\\Product\\Edit.cshtml",
+      "TargetPath": "Views\\Product\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\PC\\Desktop\\FPTBook\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
       "FileKind": "mvc"
@@ -18554,6 +18559,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\PC\\Desktop\\FPTBook\\Views\\Product\\Create.cshtml",
+      "TargetPath": "Views\\Product\\Create.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\PC\\Desktop\\FPTBook\\Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\SetPassword.cshtml",
       "FileKind": "mvc"
@@ -18561,6 +18571,11 @@
     {
       "FilePath": "c:\\Users\\PC\\Desktop\\FPTBook\\Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
       "TargetPath": "Areas\\Identity\\Pages\\Account\\Manage\\PersonalData.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\PC\\Desktop\\FPTBook\\Views\\Product\\Index.cshtml",
+      "TargetPath": "Views\\Product\\Index.cshtml",
       "FileKind": "mvc"
     },
     {
