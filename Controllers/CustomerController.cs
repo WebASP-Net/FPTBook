@@ -59,5 +59,12 @@ namespace FPTBOOK.Controllers
             }
             return View();
          }
+         public IActionResult Delete(int id)
+         {
+            Customer obj = _db.Customers.Find(id);
+            _db.Customers.Remove(obj);
+            _db.SaveChanges();
+                return RedirectToAction("Index");
+         }
     }
 }
