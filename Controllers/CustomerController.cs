@@ -39,5 +39,25 @@ namespace FPTBOOK.Controllers
             }
             return View(obj);
         }
+
+        public IActionResult Edit(int id){
+            Customer obj = _db.Customers.Find(id);
+            if(obj == null){
+                return RedirectToAction("Index");
+            }
+            return View(obj);
+        }
+
+         [HttpPost]
+         public IActionResult Edit(int id, Customer obj)
+         {
+            if(ModelState.IsValid){
+                obj.cus_id = id;
+                _db.Customers.Update(obj);
+                _db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
+         }
     }
 }
