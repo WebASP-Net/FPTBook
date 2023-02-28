@@ -24,5 +24,20 @@ namespace FPTBOOK.Controllers
             IEnumerable<Customer> ds = _db.Customers.ToList();
             return View(ds);
         }
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult Create(Customer obj)
+        {
+            if(ModelState.IsValid){
+            _db.Customers.Add(obj);
+            _db.SaveChanges();
+            return RedirectToAction("Index");
+            }
+            return View(obj);
+        }
     }
 }
