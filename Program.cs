@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using FPTBOOK.Data;
 using FPTBook.Models;
+using FPTBook.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -15,6 +16,7 @@ builder.Services.AddIdentity<WebApp1User, IdentityRole>(options => options.SignI
             .AddDefaultUI()
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
+builder.Services.AddScoped<IFileService, FileService>();
 builder.Services.AddControllersWithViews(); 
 
 var app = builder.Build();
