@@ -1,20 +1,37 @@
 @model FPTBook.Models.Category
-<br>
 
-<form asp-controller="Category" asp-action="Create" method="post">
-	Name: 
-	<section> 
-	<input type="text" asp-for="Cat_Name" />
-	<span class="text-danger" asp-validation-for="Cat_Name"></span> 
-	</section> 
-	Description:
-	<section>
-	<input type="text" asp-for="Cat_Des" />
-	<span class="text-danger" asp-validation-for="Cat_Des"></span>
-	</section> 
-	<br>
-	<input type="submit" value="Submit">
-</form>
-@section scripts {
-	<partial name="_ValidationScriptsPartial" />
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>Category</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create" enctype="multipart/form-data">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Cat_Name" class="control-label"></label>
+                <input asp-for="Cat_Name" class="form-control" />
+                <span asp-validation-for="Cat_Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cat_Des" class="control-label"></label>
+                <input asp-for="Cat_Des" class="form-control" />
+                <span asp-validation-for="Cat_Des" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
