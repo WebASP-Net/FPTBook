@@ -922,3 +922,8 @@ C:\Users\PC\Desktop\FPTBook\bin\Debug\net6.0\Microsoft.Extensions.DependencyInje
 C:\Users\PC\Desktop\FPTBook\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\PC\Desktop\FPTBook\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
 C:\Users\PC\Desktop\FPTBook\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+C:\FPTBook\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+C:\FPTBook\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\FPTBook\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+C:\FPTBook\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+C:\FPTBook\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll

@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\FPTBOOK.bundle.scp.css"
     },
     {
+      "Id": "C:\\FPTBook\\wwwroot\\Uploads\\694f451f-433f-4b8d-84ff-de671c9a4cd2.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\694f451f-433f-4b8d-84ff-de671c9a4cd2.jpg"
+    },
+    {
+      "Id": "C:\\FPTBook\\wwwroot\\Uploads\\f30c2953-6f1f-40bf-98f9-b0acbd7a7ac9.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\f30c2953-6f1f-40bf-98f9-b0acbd7a7ac9.jpg"
+    },
+    {
       "Id": "C:\\FPTBook\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
