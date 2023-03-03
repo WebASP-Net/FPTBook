@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FPTBOOK.Migrations
 {
-    public partial class InitialCreate : Migration
+    public partial class Mymigrations : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
