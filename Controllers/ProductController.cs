@@ -48,7 +48,7 @@ namespace FPTBook.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult Create([Bind("Cat_Id,Cat_Name,Cat_Id")]Product obj)
+        public IActionResult Create(Product obj)
         {
             if (ModelState.IsValid)
             {
