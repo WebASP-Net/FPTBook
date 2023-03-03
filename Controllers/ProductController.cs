@@ -76,6 +76,7 @@ namespace FPTBook.Controllers
             {
                 return RedirectToAction("Index");
             }
+            ViewData["Cat_Id"] = new SelectList(_context.Categories, "Cat_Id", "Cat_Name");
             return View(obj);
             //return Json(obj);
         }
@@ -95,7 +96,8 @@ namespace FPTBook.Controllers
                 _context.Products.Update(obj);
                 _context.SaveChanges();
                 return RedirectToAction("Index");
-            }       
+            }   
+            ViewData["Cat_Id"] = new SelectList(_context.Categories, "Cat_Id", "Cat_Id", obj.Cat_Id);    
             return View(obj);
         }
         public IActionResult Delete(int id)

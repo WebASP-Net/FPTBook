@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "w9en8fz/epr/OxWyJ7/lyGJ/3ClRRGUB2elRX81I76czSV7BNTGJwoI/Y8qWvxl0dUoCy4v/c+yLxeJpnlCUoQ==",
+  "dgSpecHash": "GcwSbJAt9xmfQaB6xrb9s1dx7587VphFbH6QGoC8xiA3RPJlzYTmht1jwqwlwcdxGkIQ9ZcbCQhq7tR5VtH95g==",
   "success": true,
-  "projectFilePath": "c:\\Users\\PC\\Desktop\\FPTBook\\FPTBOOK.csproj",
+  "projectFilePath": "C:\\Users\\PC\\Desktop\\FPTBook\\FPTBOOK.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
