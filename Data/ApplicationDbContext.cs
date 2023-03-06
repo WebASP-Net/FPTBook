@@ -1,9 +1,9 @@
 ﻿using FPTBook.Models;
-using FPTBOOK.Models;
+using FPTBook.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace FPTBOOK.Data;
+namespace FPTBook.Data;
 
 public class ApplicationDbContext : IdentityDbContext
 {

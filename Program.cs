@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using FPTBOOK.Data;
+using FPTBook.Data;
 using FPTBook.Models;
 using FPTBook.Services;
 

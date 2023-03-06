@@ -1,11 +1,11 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using FPTBOOK.Models;
-using FPTBOOK.Data;
+using FPTBook.Models;
+using FPTBook.Data;
 using Microsoft.EntityFrameworkCore;
 using FPTBook.Models;
 
-namespace FPTBOOK.Controllers;
+namespace FPTBook.Controllers;
 
 public class HomeController : Controller
 {
