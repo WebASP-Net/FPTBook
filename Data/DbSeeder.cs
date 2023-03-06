@@ -21,7 +21,7 @@ public static class DbSeeder
             {
                 UserName = "admin@gmail.com",
                 Email = "admin@gmail.com",
-                Name = "Lam Dat",
+                Name = "Duy Chuong",
                 EmailConfirmed = true,
                 PhoneNumberConfirmed = true
             };

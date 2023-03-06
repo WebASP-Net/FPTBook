@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "4Fg0Sdm4ICIkU1g4rsRalLAiZXBogBpdWyvIcNCScko=",
+  "Hash": "xbzs8O5hf5QSpI5y4+cUmG1UEoTadh4R8DwTEBJlENk=",
   "Source": "FPTBOOK",
   "BasePath": "_content/FPTBOOK",
   "Mode": "Default",
@@ -2157,6 +2157,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\694f451f-433f-4b8d-84ff-de671c9a4cd2.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\wwwroot\\Uploads\\75e6b8c5-292f-4768-bd2a-9deaf6909343.png",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "Uploads/75e6b8c5-292f-4768-bd2a-9deaf6909343.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\75e6b8c5-292f-4768-bd2a-9deaf6909343.png"
+    },
+    {
+      "Identity": "C:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\wwwroot\\Uploads\\9dc3be1f-03b5-4fd8-8a83-7bdaa87c5427.png",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "Uploads/9dc3be1f-03b5-4fd8-8a83-7bdaa87c5427.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\9dc3be1f-03b5-4fd8-8a83-7bdaa87c5427.png"
     },
     {
       "Identity": "C:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\wwwroot\\Uploads\\f30c2953-6f1f-40bf-98f9-b0acbd7a7ac9.jpg",
