@@ -11,7 +11,7 @@ using Microsoft.Extensions.Logging;
 namespace FPTBook.Controllers
 {
    
-    public class CustomerController : Controller
+   public class CustomerController : Controller
     {
         private readonly ApplicationDbContext _db;
         public CustomerController(ApplicationDbContext db)
@@ -52,7 +52,7 @@ namespace FPTBook.Controllers
          public IActionResult Edit(int id, Customer obj)
          {
             if(ModelState.IsValid){
-                obj.cus_id = id;
+                obj.Cus_Id = id;
                 _db.Customers.Update(obj);
                 _db.SaveChanges();
                 return RedirectToAction("Index");

@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace FPTBOOK.Migrations
 {
-    public partial class Mymigrations : Migration
+    public partial class Mig1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -28,9 +28,8 @@ namespace FPTBOOK.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DOB = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    ProfilePicture = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -66,19 +65,20 @@ namespace FPTBOOK.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Customers",
+                name: "Orders",
                 columns: table => new
                 {
-                    cus_id = table.Column<int>(type: "int", nullable: false)
+                    Order_Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    cus_name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
-                    cus_birthday = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    cus_gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    cus_address = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    Cus_Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    DeliveryLocal = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Cus_Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    DeliveryDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Customers", x => x.cus_id);
+                    table.PrimaryKey("PK_Orders", x => x.Order_Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -210,6 +210,53 @@ namespace FPTBOOK.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Customers",
+                columns: table => new
+                {
+                    Cus_Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Cus_Name = table.Column<string>(type: "nvarchar(50)", maxLength: 50, nullable: false),
+                    Cus_Birthday = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Cus_Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Cus_Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Order_Id = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Customers", x => x.Cus_Id);
+                    table.ForeignKey(
+                        name: "FK_Customers_Orders_Order_Id",
+                        column: x => x.Order_Id,
+                        principalTable: "Orders",
+                        principalColumn: "Order_Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "OrderDetails",
+                columns: table => new
+                {
+                    Order_Id = table.Column<int>(type: "int", nullable: false),
+                    Quantity = table.Column<int>(type: "int", nullable: false),
+                    Pro_Id = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_OrderDetails", x => new { x.Order_Id, x.Pro_Id });
+                    table.ForeignKey(
+                        name: "FK_OrderDetails_Orders_Order_Id",
+                        column: x => x.Order_Id,
+                        principalTable: "Orders",
+                        principalColumn: "Order_Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_OrderDetails_Products_Pro_Id",
+                        column: x => x.Pro_Id,
+                        principalTable: "Products",
+                        principalColumn: "ProductId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",
                 table: "AspNetRoleClaims",
@@ -250,6 +297,16 @@ namespace FPTBOOK.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Customers_Order_Id",
+                table: "Customers",
+                column: "Order_Id");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_OrderDetails_Pro_Id",
+                table: "OrderDetails",
+                column: "Pro_Id");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Products_Cat_Id",
                 table: "Products",
                 column: "Cat_Id");
@@ -276,13 +333,19 @@ namespace FPTBOOK.Migrations
                 name: "Customers");
 
             migrationBuilder.DropTable(
-                name: "Products");
+                name: "OrderDetails");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
 
             migrationBuilder.DropTable(
                 name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Orders");
+
+            migrationBuilder.DropTable(
+                name: "Products");
 
             migrationBuilder.DropTable(
                 name: "Categories");

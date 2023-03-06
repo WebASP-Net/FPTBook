@@ -1,30 +1,43 @@
-@model IEnumerable<Customer>
-@{
-    ViewData["Title"] = "Index";
-}
-<br>
+﻿@model IEnumerable<FPTBook.Models.Customer>
+<script>
+	function deleteConfirm() {
+		if (confirm("Are you sure to delete!")) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+</script>
 <a class="btn btn-primary" asp-controller="Customer" asp-action="Create">Add New</a>
-<hr>
+
 <table class="table table-hover">
-    <tr>
-        <th>Id</th>
-        <th>Name</th>
-        <th>Birthday</th>
-        <th>Gender</th>
-        <th>Address</th>
-    </tr>
-    @foreach (var kh in Model)
-    {
-        <tr>
-            <td>@kh.cus_id</td>
-            <td>@kh.cus_name</td>
-            <td>@kh.cus_birthday</td>
-            <td>@kh.cus_gender</td>
-            <td>@kh.cus_address</td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@kh.cus_id"> Edit</a>
-                <a asp-action="Delete" asp-route-id="@kh.cus_id" onclick="return confirm('Do you want to delete?')"> Delete</a>
-            </td>
-        </tr>
-    }
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Birthday</th>
+		<th>Gender</th>
+		<th>Address</th>
+		<th></th>
+	</tr>
+	@foreach (var cus in Model)
+	{
+		<tr>
+			<td>@cus.Cus_Id</td>
+			<td>@cus.Cus_Name</td>
+			<td>@cus.Cus_Birthday.ToShortDateString()</td>
+			<td>@cus.Cus_Gender</td>
+			<td>@cus.Cus_Address</td>
+			<td>
+				<a asp-action="Edit" asp-route-id="@cus.Cus_Id">Edit</a>
+				<a asp-action="Delete" asp-route-id="@cus.Cus_Id" onclick="return deleteConfirm()">Delete</a>
+			</td>
+		</tr>
+	}
 </table>
+
+@*@foreach (var cus in Model)
+{
+	<h5 class="text-danger">Id is: @cus.Cus_Id</h5>
+	<p>Hello everyone, my name is <b>@cus.Cus_Name</b> gender <b>@cus.Cus_Gender</b>. My birthday is <b>@cus.Cus_Birthday</b>. My address is in <b>@cus.Cus_Address</b></p>
+	<hr />
+}*@

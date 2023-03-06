@@ -20,8 +20,8 @@ namespace FPTBook.Controllers
 		}
 
 		public IActionResult Index()
-		{ 
-			// Take list category
+		{
+
 			IEnumerable<Category> lstCat = _ct.Categories.ToList();
 			return View(lstCat);
 		}
@@ -54,7 +54,6 @@ namespace FPTBook.Controllers
 				return RedirectToAction("Index");
 			}
 			return View(obj);
-			//return Json(obj);
 		}
 
 		[HttpPost]

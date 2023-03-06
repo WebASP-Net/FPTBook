@@ -9,15 +9,18 @@ namespace FPTBook.Models
 {
     public class Customer
     {
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int cus_id { get; set; }
-        [Required]// không đc rỗng thông báo mặc định
-        [StringLength(50)] // không quá 50 kí tự
-        public string cus_name { get; set; }
-        //[Required(ErrorMessage ="errrrrrrr")]
-        public DateTime cus_birthday { get; set; }
-        public string cus_gender { get; set; }
-        public string cus_address { get; set; }
+             [Key] //Create PK
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // Auto increment
+        public int Cus_Id { get; set; }
+        [Required(ErrorMessage = "Id khong the bo trong")]
+        [StringLength(50)]
+        public string Cus_Name { get; set; }
+		[Required(ErrorMessage = "Ten khong the bo trong")]
+		public DateTime Cus_Birthday { get; set; }
+		[Required(ErrorMessage = "Ngay sinh khong the bo trong")]
+		public string Cus_Gender { get; set; }
+		[Required(ErrorMessage = "xin hay chon gioi tinh")]
+		public string Cus_Address { get; set; }
+        public virtual Order? Order { get; set; }
     }
 }

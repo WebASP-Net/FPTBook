@@ -13,7 +13,7 @@ using Microsoft.Extensions.Logging;
 
 namespace FPTBook.Controllers
 {
-    public class ProductController : Controller
+   public class ProductController : Controller
     {
         private readonly ILogger<ProductController> _logger;
 
@@ -37,7 +37,7 @@ namespace FPTBook.Controllers
         {
             IEnumerable<Product> lstPro = _context.Products.ToList();
             return View(lstPro);
-            // Hiện thị danh sách sản phẩm, có nút chọn đưa vào giỏ hàng
+             // Showing a product list, a button to be put in the cart
             var products = _context.Products.ToList();
             return View(products);
         }
@@ -113,7 +113,7 @@ namespace FPTBook.Controllers
 
 
 
-         /// Thêm sản phẩm vào cart
+         /// Add products to cart
         [Route("addcart/{productid:int}", Name = "addcart")]
         public IActionResult AddToCart([FromRoute] int productid)
         {
@@ -124,23 +124,23 @@ namespace FPTBook.Controllers
             if (product == null)
                 return NotFound("Không có sản phẩm");
 
-            // Xử lý đưa vào Cart ...
+            // Handling into cart ...
             var cart = GetCartItems();
             var cartitem = cart.Find(p => p.product.ProductId == productid);
             if (cartitem != null)
             {
-                // Đã tồn tại, tăng thêm 1
+                // Existed, increased by 1
                 cartitem.quantity++;
             }
             else
             {
-                //  Thêm mới
+                //  Add new
                 cart.Add(new CartItem() { quantity = 1, product = product });
             }
 
-            // Lưu cart vào Session
+            // Save cart into session
             SaveCartSession(cart);
-            // Chuyển đến trang hiện thị Cart
+            // Switch to the Cart page
             return RedirectToAction(nameof(Cart));
         }
         /// xóa item trong cart
@@ -152,7 +152,7 @@ namespace FPTBook.Controllers
             var cartitem = cart.Find(p => p.product.ProductId == productid);
             if (cartitem != null)
             {
-                // Đã tồn tại, tăng thêm 1
+                // Existed, increased by 1
                 cart.Remove(cartitem);
             }
 
@@ -165,21 +165,21 @@ namespace FPTBook.Controllers
         [HttpPost]
         public IActionResult UpdateCart([FromForm] int productid, [FromForm] int quantity)
         {
-            // Cập nhật Cart thay đổi số lượng quantity ...
+            // Update Cart change the number of Quantity ...
             var cart = GetCartItems();
             var cartitem = cart.Find(p => p.product.ProductId == productid);
             if (cartitem != null)
             {
-                // Đã tồn tại, tăng thêm 1
+                // Existed, increased by 1
                 cartitem.quantity = quantity;
             }
             SaveCartSession(cart);
-            // Trả về mã thành công (không có nội dung gì - chỉ để Ajax gọi)
+            // Returning the code successfully (no content - just for Ajax to call)
             return Ok();
         }
 
 
-        // Hiện thị giỏ hàng
+        // Show shopping cart
         [Route("/cart", Name = "cart")]
         public IActionResult Cart()
         {
@@ -189,13 +189,41 @@ namespace FPTBook.Controllers
         [Route("/checkout")]
         public IActionResult CheckOut()
         {
-            // Xử lý khi đặt hàng
-            return View();
+          return View(GetCartItems());
         }
-        // Key lưu chuỗi json của Cart
+
+        [Route("/checkout")]
+        [HttpPost]
+        public IActionResult CheckOut(string CustName, string Telephone, string Address)
+        {
+            Order order = new Order()
+            {
+                Cus_Name = CustName,
+                DeliveryLocal = Address,
+                Cus_Phone = Telephone,
+                OrderDate = DateTime.Now,
+            };
+            _context.Orders.Add(order);
+            _context.SaveChanges();
+            int orderId = order.Order_Id;
+            foreach (var cartItem in GetCartItems())
+            {
+                OrderDetail orderDetail = new OrderDetail()
+                {
+                    Order_Id = orderId,
+                    Pro_Id = cartItem.product.ProductId,
+                    Quantity = cartItem.quantity,
+                };
+                _context.OrderDetails.Add(orderDetail);
+                _context.SaveChanges();
+            }
+            ClearCart();
+            return RedirectToAction("Cart");
+        }
+// Cart's JSON chain storage key
         public const string CARTKEY = "cart";
 
-        // Lấy cart từ Session (danh sách CartItem)
+        // Get Cart from Session (Cartitem list)
         List<CartItem> GetCartItems()
         {
 
@@ -208,20 +236,21 @@ namespace FPTBook.Controllers
             return new List<CartItem>();
         }
 
-        // Xóa cart khỏi session
+        // Delete Cart from session
         void ClearCart()
         {
             var session = HttpContext.Session;
             session.Remove(CARTKEY);
         }
 
-        // Lưu Cart (Danh sách CartItem) vào session
+        // Save Cart (Cartitem list) into session
         void SaveCartSession(List<CartItem> ls)
         {
             var session = HttpContext.Session;
             string jsoncart = JsonConvert.SerializeObject(ls);
             session.SetString(CARTKEY, jsoncart);
         }
+
 
     }
 }
