@@ -10,6 +10,6 @@ namespace FPTBook.Models
         {
             [PersonalData]
             public string ? Name { get; set; }
-
-        }
+        public DateTime DOB { get; internal set; }
+    }
 }

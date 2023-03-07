@@ -67,6 +67,7 @@ namespace FPTBOOK.Areas.Identity.Pages.Account.Manage
         Input = new InputModel
         {
             Name = user.Name,
+            DOB = user.DOB,
             PhoneNumber = phoneNumber
         };
     }
@@ -113,6 +114,10 @@ namespace FPTBOOK.Areas.Identity.Pages.Account.Manage
             user.Name = Input.Name;
         }
 
+        if (Input.DOB != user.DOB)
+        {
+            user.DOB = Input.DOB;
+        }
 
         await _userManager.UpdateAsync(user);
         await _signInManager.RefreshSignInAsync(user);

@@ -104,7 +104,7 @@ namespace FPTBOOK.Areas.Identity.Pages.Account
                 var user = CreateUser();
 
                 user.Name = Input.Name;
-                
+                 user.DOB = Input.DOB;
 
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
@@ -112,7 +112,7 @@ namespace FPTBOOK.Areas.Identity.Pages.Account
 
                 if (result.Succeeded)
                 {
-                    await _userManager.AddToRoleAsync(user, FPTBook.Constants.Roles.Admin.ToString());
+                    await _userManager.AddToRoleAsync(user, FPTBook.Constants.Roles.User.ToString());
                     _logger.LogInformation("User created a new account with password.");
 
                     var userId = await _userManager.GetUserIdAsync(user);

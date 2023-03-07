@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FPTBOOK.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230307031451_Mymigrations")]
+    [Migration("20230307164146_Mymigrations")]
     partial class Mymigrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -154,6 +154,9 @@ namespace FPTBOOK.Migrations
 
                     b.Property<string>("ProductImage")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
 
                     b.HasKey("ProductId");
 
@@ -369,6 +372,9 @@ namespace FPTBOOK.Migrations
             modelBuilder.Entity("FPTBook.Models.WebApp1User", b =>
                 {
                     b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.Property<DateTime>("DOB")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Name")
                         .HasColumnType("nvarchar(max)");

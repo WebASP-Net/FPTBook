@@ -13,6 +13,7 @@ using Microsoft.Extensions.Logging;
 
 namespace FPTBook.Controllers
 {
+    
    public class ProductController : Controller
     {
         private readonly ILogger<ProductController> _logger;
