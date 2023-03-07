@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "DyAQ+13xGxbGV0txp8xDaYw/0ql6FIUkrvNMVDq47vQ=",
+  "Hash": "ZuvJoJklPSh/UcN7EAhrrjm9Cr7t72ZvffvAlKkkXRc=",
   "Source": "FPTBOOK",
   "BasePath": "_content/FPTBOOK",
   "Mode": "Default",
@@ -1069,6 +1069,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\PC\\Desktop\\FPTBook\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FPTBOOK.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\css\\login.css",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\login.css"
     },
     {
       "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\css\\site.css",
@@ -2157,6 +2174,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\0e41ac66-ef23-419d-9d91-43b0efbd8183.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\1f51cf6f-1476-4d7d-82be-4f0d1517692f.jpg",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "Uploads/1f51cf6f-1476-4d7d-82be-4f0d1517692f.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\1f51cf6f-1476-4d7d-82be-4f0d1517692f.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\2e363b96-8d6d-4a14-8e18-15773b994c3c.jpg",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "Uploads/2e363b96-8d6d-4a14-8e18-15773b994c3c.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\2e363b96-8d6d-4a14-8e18-15773b994c3c.jpg"
     },
     {
       "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\34a3d365-29ce-4e19-b843-e08d53ad14e5.jpg",
