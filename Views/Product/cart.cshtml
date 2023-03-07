@@ -33,7 +33,7 @@
 						Update
 					</button>
 					<a asp-route="removecart" asp-route-productid="@cartitem.product.ProductId"
-			   class="btn btn-danger">Xóa</a>
+			   class="btn btn-danger">Delete</a>
 				</td>
 			</tr>
 		}
@@ -69,7 +69,7 @@
 }
 else
 {
-	<p class="alert alert-danger">Giỏ hàng trống</p>
+	<p class="alert alert-danger">Nothing in here</p>
 }
 
 	
