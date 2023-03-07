@@ -21,19 +21,25 @@
       <li class="nav-item active">
         <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
       </li>
+      @if (User.IsInRole("Admin"))  
+             { 
               <li class="nav-item">
                 <a class="nav-link text-dark" asp-area="" asp-controller="Category" asp-action="Index">Category</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link text-dark" asp-area="" asp-controller="Product" asp-action="Index">Product</a>
               </li>
+             }
+             @if (User.Identity.IsAuthenticated) 
+              { 
               <li class="nav-item">
                  @await Html.PartialAsync("_CartPartial")
             </li>
+              }
       <partial name="_LoginPartial" />
     </ul>
     <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <input class="form-control mr-sm-2" type="textbox" placeholder="Search" aria-label="Search" name="SearchString">
       <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
     </form>
   </div>

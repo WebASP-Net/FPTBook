@@ -13,6 +13,7 @@ namespace FPTBook.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ProductId { set; get; }
         public string Name { set; get; }
+        public int Quantity { get; set; }
         public string Description { set; get; }
         public decimal Price { set; get; }
         public string? ProductImage { set; get; }

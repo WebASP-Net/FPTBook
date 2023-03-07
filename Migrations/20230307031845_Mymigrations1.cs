@@ -4,7 +4,7 @@
 
 namespace FPTBOOK.Migrations
 {
-    public partial class Mymigrations3 : Migration
+    public partial class Mymigrations1 : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
