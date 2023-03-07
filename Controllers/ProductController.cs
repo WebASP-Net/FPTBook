@@ -192,7 +192,6 @@ namespace FPTBook.Controllers
     [Route("/checkout")]
     public IActionResult CheckOut()
     {
-        // Xử lý khi đặt hàng
        return View(GetCartItems());
     }
     
@@ -226,7 +225,7 @@ namespace FPTBook.Controllers
                 _context.SaveChanges();
             }
             ClearCart();
-            return RedirectToAction("Cart");
+            return Redirect("~/Home/Index");
         }
 // Cart's JSON chain storage key
         public const string CARTKEY = "cart";
