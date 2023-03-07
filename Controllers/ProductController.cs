@@ -161,24 +161,20 @@ namespace FPTBook.Controllers
             return RedirectToAction(nameof(Cart));
         }
 
-        /// Cập nhật
-        [Route("/updatecart", Name = "updatecart")]
-        [HttpPost]
-        public IActionResult UpdateCart([FromForm] int productid, [FromForm] int quantity)
-        {
-            // Update Cart change the number of Quantity ...
-            var cart = GetCartItems();
-            var cartitem = cart.Find(p => p.product.ProductId == productid);
-            if (cartitem != null)
-            {
-                // Existed, increased by 1
-                cartitem.quantity = quantity;
-            }
-            SaveCartSession(cart);
-            // Returning the code successfully (no content - just for Ajax to call)
-            return Ok();
+    [Route ("/updatecart", Name = "updatecart")]
+    [HttpPost]
+    public IActionResult UpdateCart ([FromForm] int productid, [FromForm] int quantity) {
+        // Cập nhật Cart thay đổi số lượng quantity ...
+        var cart = GetCartItems ();
+        var cartitem = cart.Find (p => p.product.ProductId == productid);
+        if (cartitem != null) {
+            // Đã tồn tại, tăng thêm 1
+            cartitem.quantity = quantity;
         }
-
+        SaveCartSession (cart);
+        // Trả về mã thành công (không có nội dung gì - chỉ để Ajax gọi)
+        return Ok();
+    }
 
         // Show shopping cart
         [Route("/cart", Name = "cart")]
@@ -186,8 +182,6 @@ namespace FPTBook.Controllers
         {
             return View(GetCartItems());
         }
-
-        
 
     [Route("/checkout")]
     public IActionResult CheckOut()

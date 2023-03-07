@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\FPTBOOK.csproj": {}
+    "c:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\FPTBOOK.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\FPTBOOK.csproj": {
+    "c:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\FPTBOOK.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\FPTBOOK.csproj",
+        "projectUniqueName": "c:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\FPTBOOK.csproj",
         "projectName": "FPTBOOK",
-        "projectPath": "C:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\FPTBOOK.csproj",
+        "projectPath": "c:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\FPTBOOK.csproj",
         "packagesPath": "C:\\Users\\cn191\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\obj\\",
+        "outputPath": "c:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
