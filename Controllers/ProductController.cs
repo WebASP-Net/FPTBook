@@ -187,26 +187,33 @@ namespace FPTBook.Controllers
             return View(GetCartItems());
         }
 
-        [Route("/checkout")]
-        public IActionResult CheckOut()
-        {
-          return View(GetCartItems());
-        }
+        
 
-        [Route("/checkout")]
+    [Route("/checkout")]
+    public IActionResult CheckOut()
+    {
+        // Xử lý khi đặt hàng
+       return View(GetCartItems());
+    }
+    
+     [Route("/checkout")]
         [HttpPost]
-        public IActionResult CheckOut(string CustName, string Telephone, string Address)
+        public IActionResult CheckOut(string country,string first_name,string last_name,string address,string city,string phone_number,string email_address)
         {
             Order order = new Order()
             {
-                Cus_Name = CustName,
-                DeliveryLocal = Address,
-                Cus_Phone = Telephone,
+                country = country,
+                cus_first_name = first_name,
+                cus_last_name = last_name,
+                cus_address = address,
+                cus_city = city,
+                cus_phone = phone_number,
+                cus_email=email_address,
                 OrderDate = DateTime.Now,
             };
             _context.Orders.Add(order);
             _context.SaveChanges();
-            int orderId = order.Order_Id;
+            int orderId = order.order_id;
             foreach (var cartItem in GetCartItems())
             {
                 OrderDetail orderDetail = new OrderDetail()

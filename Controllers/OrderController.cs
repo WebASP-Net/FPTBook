@@ -57,7 +57,7 @@ namespace FPTBook.Controllers
 		{
 			if (ModelState.IsValid)
 			{
-				obj.Order_Id = id;
+				obj.order_id = id;
 				_ord.Orders.Update(obj);
 				_ord.SaveChanges();
 				return RedirectToAction("Index");

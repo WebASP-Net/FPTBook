@@ -1,46 +1,83 @@
-﻿@model IEnumerable<Order>
-<script>
-	function deleteConfirm() {
-		if (confirm("Are you sure to delete!")) {
-			return true;
-		} else {
-			return false;
-		}
-	}
-</script>
-<a class="btn btn-primary" asp-controller="Order" asp-action="Create">Add New</a>
+@model IEnumerable<FPTBook.Models.Order>
 
-<table class="table table-hover">
-	<tr>
-		<th>Order_Id</th>
-		<th>Cus_Name</th>
-		<th>DeliveryLocal</th>
-		<th>Cus_PhoneCus_Phone</th>
-	    <th>OrderDate</th>
-		<th>DeliveryDate</th>
-		<th></th>
-	</tr>
-	@foreach (var order in Model)
-	{
-		<tr>
-			<td>@order.Order_Id</td>
-		    <td>@order.Cus_Name</td>
-		    <td>@order.DeliveryLocal</td>
-		    <td>@order.Cus_Phone</td>
-		    <td>@order.OrderDate</td>
-		    <td>@order.DeliveryDate</td>
-			<td>
-				<a asp-action="Edit" asp-route-id="@order.Order_Id">Edit</a>
-				<a asp-action="Delete" asp-route-id="@order.Order_Id" onclick="return deleteConfirm()">Delete</a>
-			</td>
-		</tr>
-	}
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.country)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cus_first_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cus_last_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cus_address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cus_city)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cus_phone)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.cus_email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.OrderDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DeliveryDate)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.country)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cus_first_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cus_last_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cus_address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cus_city)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cus_phone)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.cus_email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OrderDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DeliveryDate)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.order_id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.order_id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.order_id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
 </table>
-
-@*@foreach (var cat in Model)
-{
-	<h5 class="text-danger">Id is: @order.Order_Id</h5>
-	<p>Hello everyone, my name is <b>@order.Cus_Name</b> description <b>@order.DeliveryDate</b></p>
-	<hr />
-}*@
-

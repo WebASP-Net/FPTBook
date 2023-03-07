@@ -15,7 +15,7 @@ namespace FPTBook.Models
         public string Name { set; get; }
         public int Quantity { get; set; }
         public string Description { set; get; }
-        public decimal Price { set; get; }
+        public float Price { set; get; }
         public string? ProductImage { set; get; }
         [NotMapped]
         public IFormFile FileImage { set; get; }
