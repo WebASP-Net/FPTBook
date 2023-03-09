@@ -4,11 +4,10 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1 class="nav-link">Details</h1>
 
 <div>
-    <h4>Order</h4>
-    <hr />
+    <hr/>
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.country)
@@ -57,12 +56,6 @@
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.OrderDate)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.DeliveryDate)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.DeliveryDate)
         </dd>
     </dl>
 </div>
