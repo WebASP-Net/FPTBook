@@ -12,14 +12,14 @@ namespace FPTBook.Models
              [Key] //Create PK
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)] // Auto increment
         public int Cus_Id { get; set; }
-        [Required(ErrorMessage = "Id khong the bo trong")]
+        [Required(ErrorMessage = "Id Empty")]
         [StringLength(50)]
         public string Cus_Name { get; set; }
-		[Required(ErrorMessage = "Ten khong the bo trong")]
+		[Required(ErrorMessage = "Name Empty")]
 		public DateTime Cus_Birthday { get; set; }
-		[Required(ErrorMessage = "Ngay sinh khong the bo trong")]
+		[Required(ErrorMessage = "Birthday Empty")]
 		public string Cus_Gender { get; set; }
-		[Required(ErrorMessage = "xin hay chon gioi tinh")]
+		[Required(ErrorMessage = "Choose Gender")]
 		public string Cus_Address { get; set; }
         public virtual Order? Order { get; set; }
     }

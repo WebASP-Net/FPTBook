@@ -251,7 +251,5 @@ namespace FPTBook.Controllers
             string jsoncart = JsonConvert.SerializeObject(ls);
             session.SetString(CARTKEY, jsoncart);
         }
-
-
     }
 }
