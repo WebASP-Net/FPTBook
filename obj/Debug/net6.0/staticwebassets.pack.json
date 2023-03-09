@@ -21,8 +21,20 @@
       "PackagePath": "staticwebassets\\Uploads\\0e41ac66-ef23-419d-9d91-43b0efbd8183.jpg"
     },
     {
+      "Id": "C:\\FPTBook\\wwwroot\\Uploads\\1f51cf6f-1476-4d7d-82be-4f0d1517692f.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\1f51cf6f-1476-4d7d-82be-4f0d1517692f.jpg"
+    },
+    {
+      "Id": "C:\\FPTBook\\wwwroot\\Uploads\\2e363b96-8d6d-4a14-8e18-15773b994c3c.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\2e363b96-8d6d-4a14-8e18-15773b994c3c.jpg"
+    },
+    {
       "Id": "C:\\FPTBook\\wwwroot\\Uploads\\34a3d365-29ce-4e19-b843-e08d53ad14e5.jpg",
       "PackagePath": "staticwebassets\\Uploads\\34a3d365-29ce-4e19-b843-e08d53ad14e5.jpg"
+    },
+    {
+      "Id": "C:\\FPTBook\\wwwroot\\Uploads\\53b3b024-ba7f-4cd3-89cd-2d4e65c1d07f.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\53b3b024-ba7f-4cd3-89cd-2d4e65c1d07f.jpg"
     },
     {
       "Id": "C:\\FPTBook\\wwwroot\\Uploads\\5afb5c2e-92ee-488a-bf73-3820d5cbb425.jpg",
@@ -31,6 +43,10 @@
     {
       "Id": "C:\\FPTBook\\wwwroot\\Uploads\\694f451f-433f-4b8d-84ff-de671c9a4cd2.jpg",
       "PackagePath": "staticwebassets\\Uploads\\694f451f-433f-4b8d-84ff-de671c9a4cd2.jpg"
+    },
+    {
+      "Id": "C:\\FPTBook\\wwwroot\\Uploads\\7141f8b4-14db-4fd4-952a-7ba01fafbb1f.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\7141f8b4-14db-4fd4-952a-7ba01fafbb1f.jpg"
     },
     {
       "Id": "C:\\FPTBook\\wwwroot\\Uploads\\75e6b8c5-292f-4768-bd2a-9deaf6909343.png",
@@ -45,12 +61,24 @@
       "PackagePath": "staticwebassets\\Uploads\\9dc3be1f-03b5-4fd8-8a83-7bdaa87c5427.png"
     },
     {
+      "Id": "C:\\FPTBook\\wwwroot\\Uploads\\a45de372-5719-4f6d-a365-a735486c1ff1.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\a45de372-5719-4f6d-a365-a735486c1ff1.jpg"
+    },
+    {
       "Id": "C:\\FPTBook\\wwwroot\\Uploads\\cada075f-d894-4a56-b797-95f894a4b28a.jpg",
       "PackagePath": "staticwebassets\\Uploads\\cada075f-d894-4a56-b797-95f894a4b28a.jpg"
     },
     {
+      "Id": "C:\\FPTBook\\wwwroot\\Uploads\\f1d42eea-eee6-49c2-ba24-39aa135141ad.jpg",
+      "PackagePath": "staticwebassets\\Uploads\\f1d42eea-eee6-49c2-ba24-39aa135141ad.jpg"
+    },
+    {
       "Id": "C:\\FPTBook\\wwwroot\\Uploads\\f30c2953-6f1f-40bf-98f9-b0acbd7a7ac9.jpg",
       "PackagePath": "staticwebassets\\Uploads\\f30c2953-6f1f-40bf-98f9-b0acbd7a7ac9.jpg"
+    },
+    {
+      "Id": "C:\\FPTBook\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
     },
     {
       "Id": "C:\\FPTBook\\wwwroot\\css\\site.css",
