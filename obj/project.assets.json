@@ -11174,19 +11174,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\PC\\.nuget\\packages\\": {}
+    "C:\\Users\\cn191\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\PC\\Desktop\\FPTBook\\FPTBOOK.csproj",
+      "projectUniqueName": "c:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\FPTBOOK.csproj",
       "projectName": "FPTBOOK",
-      "projectPath": "c:\\Users\\PC\\Desktop\\FPTBook\\FPTBOOK.csproj",
-      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\PC\\Desktop\\FPTBook\\obj\\",
+      "projectPath": "c:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\FPTBOOK.csproj",
+      "packagesPath": "C:\\Users\\cn191\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\cn191\\OneDrive\\Documents\\GitHub\\FPTBook\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cn191\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -11270,16 +11275,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[6.0.14, 6.0.14]"
-          },
-          {
-            "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.14, 6.0.14]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"

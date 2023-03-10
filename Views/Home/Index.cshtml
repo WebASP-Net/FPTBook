@@ -1,45 +1,4 @@
 ﻿@model IEnumerable<FPTBook.Models.Product>
-
-@*
-<section>
-    <div class="row">
-        @foreach (var product in Model)
-        {
-
-            <div class="container mt-5 mb-5">
-                <div class="d-flex justify-content-center row">
-                  
-                    <div class="row p-2 bg-white border rounded">
-                        <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image"
-           src="~/Uploads/@product.ProductImage" width="310" height="500"></div>
-                        <div class="col-md-6 mt-1">
-                            <h5><a class="title">Title: @product.Name</a></h5>
-                            <div class="d-flex flex-row">
-                                <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
-                                        class="fa fa-star"></i><i class="fa fa-star"></i></div><span></span>
-                            </div>
-                            <div class="mt-1 mb-1 spec-1"><span></span><span class="dot"></span><span></span><span
-                                    class="dot"></span><span>Description: @product.Description<br></span></div>
-                            <div class="mt-1 mb-1 spec-1"><span></span><span class="dot"></span><span></span><span
-                                    class="dot"></span><span><br></span></div>
-                            <p class="text-justify text-truncate para mb-0"><br><br>
-                            </p>
-                        </div>
-                        <div class="align-products-center align-content-center col-md-3 border-left mt-1">
-                            <div class="d-flex flex-row align-products-center">
-                                <h4 class="mr-1">Price: $@product.Price</h4>
-                            </div>
-                            <h6 class="text-success">Free Shipping</h6>
-                            <div class="d-flex flex-column mt-4"> <a asp-route="addcart" asp-route-productid="@product.ProductId"class="btn btn-secondary btn-sm float-right">Add to cart</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        }
-    </div>
-</section>
-*@
 @foreach (var product in Model)
         {
 
