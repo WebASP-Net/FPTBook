@@ -1,10 +1,10 @@
 {
   "Version": 1,
-  "Hash": "GRCJbWzTEIpoPEFqW05W7U/5TjvpYvWku+euELABIdQ=",
+  "Hash": "5aZgf15mKDwupopBAh1ZKcnZ7vmnpRamWSHZkiYdtNE=",
   "Source": "FPTBOOK",
   "BasePath": "_content/FPTBOOK",
   "Mode": "Default",
-  "ManifestType": "Build",
+  "ManifestType": "Publish",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {

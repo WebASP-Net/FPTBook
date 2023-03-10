@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FPTBOOK.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20230307164146_Mymigrations")]
+    [Migration("20230310042626_Mymigrations")]
     partial class Mymigrations
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -69,43 +69,56 @@ namespace FPTBOOK.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<int?>("Order_Id")
+                    b.Property<int?>("order_id")
                         .HasColumnType("int");
 
                     b.HasKey("Cus_Id");
 
-                    b.HasIndex("Order_Id");
+                    b.HasIndex("order_id");
 
                     b.ToTable("Customers");
                 });
 
             modelBuilder.Entity("FPTBook.Models.Order", b =>
                 {
-                    b.Property<int>("Order_Id")
+                    b.Property<int>("order_id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Order_Id"), 1L, 1);
-
-                    b.Property<string>("Cus_Name")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Cus_Phone")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("DeliveryDate")
-                        .HasColumnType("datetime2");
-
-                    b.Property<string>("DeliveryLocal")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("order_id"), 1L, 1);
 
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 
-                    b.HasKey("Order_Id");
+                    b.Property<string>("country")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("cus_address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("cus_city")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("cus_email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("cus_first_name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("cus_last_name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("cus_phone")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("order_id");
 
                     b.ToTable("Orders");
                 });
@@ -149,8 +162,8 @@ namespace FPTBOOK.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Price")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<float>("Price")
+                        .HasColumnType("real");
 
                     b.Property<string>("ProductImage")
                         .HasColumnType("nvarchar(max)");
@@ -386,7 +399,7 @@ namespace FPTBOOK.Migrations
                 {
                     b.HasOne("FPTBook.Models.Order", "Order")
                         .WithMany("Customers")
-                        .HasForeignKey("Order_Id");
+                        .HasForeignKey("order_id");
 
                     b.Navigation("Order");
                 });

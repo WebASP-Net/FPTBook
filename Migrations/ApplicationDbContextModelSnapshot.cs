@@ -85,9 +85,6 @@ namespace FPTBOOK.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("order_id"), 1L, 1);
 
-                    b.Property<DateTime>("DeliveryDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<DateTime>("OrderDate")
                         .HasColumnType("datetime2");
 

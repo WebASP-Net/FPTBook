@@ -69,17 +69,20 @@ namespace FPTBOOK.Migrations
                 name: "Orders",
                 columns: table => new
                 {
-                    Order_Id = table.Column<int>(type: "int", nullable: false)
+                    order_id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Cus_Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    DeliveryLocal = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Cus_Phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    DeliveryDate = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    country = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    cus_first_name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    cus_last_name = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    cus_address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    cus_city = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    cus_phone = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    cus_email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    OrderDate = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Orders", x => x.Order_Id);
+                    table.PrimaryKey("PK_Orders", x => x.order_id);
                 });
 
             migrationBuilder.CreateTable(
@@ -197,7 +200,7 @@ namespace FPTBOOK.Migrations
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Quantity = table.Column<int>(type: "int", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Price = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
+                    Price = table.Column<float>(type: "real", nullable: false),
                     ProductImage = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Cat_Id = table.Column<int>(type: "int", nullable: false)
                 },
@@ -222,16 +225,16 @@ namespace FPTBOOK.Migrations
                     Cus_Birthday = table.Column<DateTime>(type: "datetime2", nullable: false),
                     Cus_Gender = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Cus_Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Order_Id = table.Column<int>(type: "int", nullable: true)
+                    order_id = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Customers", x => x.Cus_Id);
                     table.ForeignKey(
-                        name: "FK_Customers_Orders_Order_Id",
-                        column: x => x.Order_Id,
+                        name: "FK_Customers_Orders_order_id",
+                        column: x => x.order_id,
                         principalTable: "Orders",
-                        principalColumn: "Order_Id");
+                        principalColumn: "order_id");
                 });
 
             migrationBuilder.CreateTable(
@@ -249,7 +252,7 @@ namespace FPTBOOK.Migrations
                         name: "FK_OrderDetails_Orders_Order_Id",
                         column: x => x.Order_Id,
                         principalTable: "Orders",
-                        principalColumn: "Order_Id",
+                        principalColumn: "order_id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_OrderDetails_Products_Pro_Id",
@@ -299,9 +302,9 @@ namespace FPTBOOK.Migrations
                 filter: "[NormalizedUserName] IS NOT NULL");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Customers_Order_Id",
+                name: "IX_Customers_order_id",
                 table: "Customers",
-                column: "Order_Id");
+                column: "order_id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_OrderDetails_Pro_Id",
