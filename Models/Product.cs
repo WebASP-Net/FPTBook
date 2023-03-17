@@ -18,10 +18,11 @@ namespace FPTBook.Models
         public string Name { set; get; }
 
         [Required(ErrorMessage = "Quantity Empty")]
+        [Range(1,500, ErrorMessage = "Product quantity cannot be negative!")]
         public int Quantity { get; set; }
 
         [Required(ErrorMessage = "Description Empty")]
-        [StringLength(maximumLength:1000,ErrorMessage ="Length must be less than 1000 characters")]
+        [StringLength (105)]
         public string Description { set; get; }
 
         [Required(ErrorMessage = "Price Empty")]

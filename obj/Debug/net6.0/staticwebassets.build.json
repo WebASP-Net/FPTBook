@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "07bbFrLn1uA21+2MxwHNshfvHwgLLXBmFsBDzJIaKVk=",
+  "Hash": "UG+0AMOmpv5W0Uuvx7L1EeP3PgGh1ViPWK3Uxf8rTA0=",
   "Source": "FPTBOOK",
   "BasePath": "_content/FPTBOOK",
   "Mode": "Default",
@@ -2176,6 +2176,23 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\0e41ac66-ef23-419d-9d91-43b0efbd8183.jpg"
     },
     {
+      "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\1177505.png",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "Uploads/1177505.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\1177505.png"
+    },
+    {
       "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\1f51cf6f-1476-4d7d-82be-4f0d1517692f.jpg",
       "SourceId": "FPTBOOK",
       "SourceType": "Discovered",
@@ -2210,6 +2227,23 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\1fb48b6f-3854-446e-bde1-804afbe3b00b.png"
     },
     {
+      "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\220a8d5d-6d26-4d09-b1b6-66acf2722f3f.png",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "Uploads/220a8d5d-6d26-4d09-b1b6-66acf2722f3f.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\220a8d5d-6d26-4d09-b1b6-66acf2722f3f.png"
+    },
+    {
       "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\2e363b96-8d6d-4a14-8e18-15773b994c3c.jpg",
       "SourceId": "FPTBOOK",
       "SourceType": "Discovered",
@@ -2242,6 +2276,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\34a3d365-29ce-4e19-b843-e08d53ad14e5.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\4afcdc3a-6e2c-4e2d-b063-f22d8491f735.png",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "Uploads/4afcdc3a-6e2c-4e2d-b063-f22d8491f735.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\4afcdc3a-6e2c-4e2d-b063-f22d8491f735.png"
     },
     {
       "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\4ba2da4c-2c1e-4bb0-9c20-d480d5ad49ba.png",
@@ -2363,6 +2414,23 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\75e6b8c5-292f-4768-bd2a-9deaf6909343.png"
     },
     {
+      "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\802e7bff-398d-4b7d-a912-f1886a967e1f.png",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "Uploads/802e7bff-398d-4b7d-a912-f1886a967e1f.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\802e7bff-398d-4b7d-a912-f1886a967e1f.png"
+    },
+    {
       "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\8387628a-8073-4487-bade-7378ce52f199.png",
       "SourceId": "FPTBOOK",
       "SourceType": "Discovered",
@@ -2378,6 +2446,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\8387628a-8073-4487-bade-7378ce52f199.png"
+    },
+    {
+      "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\88ca481f-8cd4-4690-9729-f464d4226924.png",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "Uploads/88ca481f-8cd4-4690-9729-f464d4226924.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\88ca481f-8cd4-4690-9729-f464d4226924.png"
+    },
+    {
+      "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\92b39928-1338-487c-b94e-23273dd8d43f.png",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "Uploads/92b39928-1338-487c-b94e-23273dd8d43f.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\92b39928-1338-487c-b94e-23273dd8d43f.png"
     },
     {
       "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\97fae793-1689-4f60-941d-21fde74c027e.jpg",
@@ -2448,6 +2550,23 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\a9f20153-78ea-45a8-bd4f-5d17dc01c2fb.png"
     },
     {
+      "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\ac6cdee5-5795-4c44-bf00-4989429e4050.png",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "Uploads/ac6cdee5-5795-4c44-bf00-4989429e4050.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\ac6cdee5-5795-4c44-bf00-4989429e4050.png"
+    },
+    {
       "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\b26f623a-44ea-4cb0-b456-70a9fb22fea3.png",
       "SourceId": "FPTBOOK",
       "SourceType": "Discovered",
@@ -2516,6 +2635,23 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\cada075f-d894-4a56-b797-95f894a4b28a.jpg"
     },
     {
+      "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\d03e829a-c134-45b0-b29b-ae0e7e76f815.png",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "Uploads/d03e829a-c134-45b0-b29b-ae0e7e76f815.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\d03e829a-c134-45b0-b29b-ae0e7e76f815.png"
+    },
+    {
       "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\d0b492e4-6e0b-4bd9-b8ed-821fc63ecf7b.png",
       "SourceId": "FPTBOOK",
       "SourceType": "Discovered",
@@ -2533,6 +2669,23 @@
       "OriginalItemSpec": "wwwroot\\Uploads\\d0b492e4-6e0b-4bd9-b8ed-821fc63ecf7b.png"
     },
     {
+      "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\d24827d2-c258-44c6-bf6e-11d30956847c.png",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "Uploads/d24827d2-c258-44c6-bf6e-11d30956847c.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\d24827d2-c258-44c6-bf6e-11d30956847c.png"
+    },
+    {
       "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\d7204270-09ec-4984-8301-f0706bcd7ca9.png",
       "SourceId": "FPTBOOK",
       "SourceType": "Discovered",
@@ -2548,6 +2701,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Uploads\\d7204270-09ec-4984-8301-f0706bcd7ca9.png"
+    },
+    {
+      "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\dd69fc50-6326-4078-a483-fbd29f145602.png",
+      "SourceId": "FPTBOOK",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\",
+      "BasePath": "_content/FPTBOOK",
+      "RelativePath": "Uploads/dd69fc50-6326-4078-a483-fbd29f145602.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Uploads\\dd69fc50-6326-4078-a483-fbd29f145602.png"
     },
     {
       "Identity": "C:\\Users\\PC\\Desktop\\FPTBook\\wwwroot\\Uploads\\e25bf25f-7fea-4ccf-8c06-cd542d9593a7.png",

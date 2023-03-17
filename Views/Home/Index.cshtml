@@ -10,8 +10,12 @@
            src="~/Uploads/@product.ProductImage" width="310" height="500"></div>
                 <div class="col-md-6 mt-1">
                     <h5>Book title: @product.Name</h5>
-                    <p class="text-justify text-truncate para mb-0">Description: @product.Description<br><br></p>
+                   @* <p class="text-justify text-truncate mb-0">Description: @product.Description<br><br></p>*@
+                    <div class="col-md-15 mt-1" >
+                    <p>Description: @product.Description<br><br></p>
                 </div>
+                </div>
+              
                 <div class="align-products-center align-content-center col-md-3 border-left mt-1">
                     <div class="d-flex flex-row align-products-center">
                         <h4 class="mr-1">Price: @product.Price</h4>
