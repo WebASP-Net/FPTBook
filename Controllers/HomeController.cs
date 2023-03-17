@@ -28,7 +28,18 @@ public class HomeController : Controller
         IEnumerable<Product> lstPro = _db.Products.ToList();
         return View(lstPro);
     }
-
+    
+    public IActionResult Search(string SearchString = "")
+    {
+        if (!String.IsNullOrEmpty(SearchString))
+        {
+            var Products = _db.Products.Include(s => s.Category).Where(x => x.Name.ToUpper().Contains(SearchString.ToUpper()));
+            return View(Products.ToList());
+        }
+    
+        IEnumerable<Product> lstPro = _db.Products.ToList();
+        return View(lstPro);
+    }
     public IActionResult Privacy()
     {
         return View();
