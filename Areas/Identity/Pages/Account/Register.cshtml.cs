@@ -61,8 +61,9 @@ namespace FPTBOOK.Areas.Identity.Pages.Account
 
         public class InputModel
         {
-            [Required]
+            [Required(ErrorMessage = "Name Empty")]
             [DataType(DataType.Text)]
+            [StringLength(maximumLength:25,ErrorMessage ="Length must be less than 50 characters")]
             [Display(Name = "Full name")]
             public string Name { get; set; }
 
@@ -74,6 +75,7 @@ namespace FPTBOOK.Areas.Identity.Pages.Account
             [Required]
             [EmailAddress]
             [Display(Name = "Email")]
+            [StringLength(maximumLength:50,ErrorMessage ="Length must be less than 50 characters")]
             public string Email { get; set; }
 
             [Required]

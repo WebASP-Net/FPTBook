@@ -67,6 +67,7 @@ namespace FPTBOOK.Areas.Identity.Pages.Account
             /// </summary>
             [Required]
             [EmailAddress]
+             [StringLength(maximumLength:50,ErrorMessage ="Length must be less than 50 characters")]
             public string Email { get; set; }
 
             /// <summary>
